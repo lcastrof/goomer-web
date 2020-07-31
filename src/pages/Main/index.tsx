@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useEffect } from 'react';
-import api from '../../services/api';
+import React from 'react';
+// import api from '../../services/api';
 
 import {
   Container,
@@ -13,15 +13,15 @@ import {
 } from './styles';
 
 const Main: React.FC = () => {
-  useEffect(() => {
-    async function loadRestaurants(): Promise<void> {
-      const { data } = await api.get('/');
+  // useEffect(() => {
+  //   async function loadRestaurants(): Promise<void> {
+  //     const { data } = await api.get('/');
 
-      console.log(data);
-    }
+  //     console.log(data);
+  //   }
 
-    loadRestaurants();
-  }, []);
+  //   loadRestaurants();
+  // }, []);
 
   return (
     <Container>
@@ -66,7 +66,40 @@ const Main: React.FC = () => {
           </RestaurantInfo>
         </RestaurantCard>
 
+        <RestaurantCard to="/restaurant" className="closed">
+          <img
+            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            alt="restaurant image"
+          />
+          <RestaurantInfo>
+            <strong>Nome do Restaurante</strong>
+            <span>Endereco do restaurante</span>
+          </RestaurantInfo>
+        </RestaurantCard>
+
+        <RestaurantCard to="/restaurant" className="closed">
+          <img
+            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            alt="restaurant image"
+          />
+          <RestaurantInfo>
+            <strong>Nome do Restaurante</strong>
+            <span>Endereco do restaurante</span>
+          </RestaurantInfo>
+        </RestaurantCard>
+
         <RestaurantCard to="/restaurant">
+          <img
+            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            alt="restaurant image"
+          />
+          <RestaurantInfo>
+            <strong>Nome do Restaurante</strong>
+            <span>Endereco do restaurante</span>
+          </RestaurantInfo>
+        </RestaurantCard>
+
+        <RestaurantCard to="/restaurant" className="closed">
           <img
             src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
             alt="restaurant image"
@@ -99,40 +132,7 @@ const Main: React.FC = () => {
           </RestaurantInfo>
         </RestaurantCard>
 
-        <RestaurantCard to="/restaurant">
-          <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
-            alt="restaurant image"
-          />
-          <RestaurantInfo>
-            <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
-          </RestaurantInfo>
-        </RestaurantCard>
-
-        <RestaurantCard to="/restaurant">
-          <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
-            alt="restaurant image"
-          />
-          <RestaurantInfo>
-            <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
-          </RestaurantInfo>
-        </RestaurantCard>
-
-        <RestaurantCard to="/restaurant">
-          <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
-            alt="restaurant image"
-          />
-          <RestaurantInfo>
-            <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
-          </RestaurantInfo>
-        </RestaurantCard>
-
-        <RestaurantCard to="/restaurant">
+        <RestaurantCard to="/restaurant" className="closed">
           <img
             src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
             alt="restaurant image"

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { FiSearch } from 'react-icons/fi';
 
 import { Link } from 'react-router-dom';
@@ -86,6 +86,7 @@ export const RestaurantCard = styled(Link)`
   margin-bottom: 52px;
   margin-right: 48px;
   text-decoration: none;
+  transition: opacity 0.2s;
 
   img {
     width: 100px;
@@ -112,6 +113,17 @@ export const RestaurantCard = styled(Link)`
     color: var(--white);
     font-size: 8px;
     font-weight: bold;
+
+    ${(props) =>
+      props.className === 'closed' &&
+      css`
+        content: 'Fechado';
+        background: #b5abd4;
+      `}
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 `;
 
