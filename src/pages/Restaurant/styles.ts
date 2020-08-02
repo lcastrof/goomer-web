@@ -1,23 +1,16 @@
-import styled, { css } from 'styled-components';
-import { FiSearch, FiChevronDown } from 'react-icons/fi';
-
-interface FoodCardsProps {
-  isOpen: boolean;
-}
-interface PriceProps {
-  isPromo?: boolean;
-}
+import styled from 'styled-components';
+import { FiSearch } from 'react-icons/fi';
 
 export const Container = styled.div`
-  max-width: 802px;
   height: 100%;
-  padding: 0 75px;
+  padding: 0 75px 25px;
 
   display: flex;
 `;
 
 export const Content = styled.div`
   margin-top: 24px;
+  max-width: 802px;
 `;
 
 export const RestaurantInfoWrapper = styled.div`
@@ -123,114 +116,11 @@ export const ExpandableTabs = styled.div`
   max-width: 802px;
 `;
 
-export const Tab = styled.div<FoodCardsProps>`
-  margin-top: 16px;
-  > button {
-    height: 42px;
-    border-bottom: 1px solid var(--gray);
-    background: var(--white);
-    text-align: left;
-    margin-bottom: 24px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-`;
+export const Banner = styled.div`
+  width: 282px;
+  height: 500px;
+  background: var(--plate-search);
 
-export const ArrowIcon = styled(FiChevronDown)`
-  width: 16px;
-  height: 16px;
-`;
-
-export const FoodCards = styled.div<FoodCardsProps>`
-  display: flex;
-  margin-top: 24px;
-  flex-wrap: wrap;
-  width: 850px;
-`;
-
-export const Card = styled.a`
-  display: flex;
-  width: 386px;
-  height: 115px;
-  box-shadow: 0px 4px 8px #00000029;
-  margin-right: 30px;
-  margin-top: 24px;
-  transition: opacity 0.2s;
-
-  img {
-    height: 115px;
-    margin-right: 16px;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
-`;
-
-export const FoodInfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  margin-top: 15px;
-`;
-
-export const FoodInfo = styled.div<PriceProps>`
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  ${(props) =>
-    props.isPromo &&
-    css`
-      &::after {
-        content: 'Promo Almoço';
-        position: absolute;
-        color: var(--white);
-        font-size: 8px;
-
-        right: 2px;
-        top: -10px;
-
-        width: 103px;
-        height: 21px;
-
-        background: var(--secondary);
-        border-radius: 11px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    `}
-
-  > strong {
-    color: var(--gray);
-  }
-
-  > span {
-    font-size: 12px;
-    margin-top: 8px;
-    font-weight: 400;
-  }
-`;
-
-export const Price = styled.div<PriceProps>`
-  margin-top: 8px;
-  color: var(--primary);
-  position: relative;
-
-  ${(props) =>
-    props.isPromo &&
-    css`
-      &::after {
-        content: 'R$ 20.90';
-        position: relative;
-        color: var(--light-gray);
-        font-size: 12px;
-        left: 7px;
-        text-decoration: line-through;
-      }
-    `}
+  margin-left: 134px;
+  margin-top: 180px;
 `;

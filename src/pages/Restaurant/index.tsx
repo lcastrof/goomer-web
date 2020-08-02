@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
-// import { useRouteMatch } from 'react-router-dom';
+
+import Tab from '../../components/Tab';
 
 import {
   Container,
@@ -11,22 +12,10 @@ import {
   SearchInputWrapper,
   SearchIcon,
   ExpandableTabs,
-  Tab,
-  ArrowIcon,
-  FoodCards,
-  Card,
-  FoodInfoWrapper,
-  FoodInfo,
-  Price,
+  Banner,
 } from './styles';
 
-interface RestaurantParams {
-  id: string;
-}
-
 const Restaurant: React.FC = () => {
-  // const { params } = useRouteMatch<RestaurantParams>();
-
   return (
     <Container>
       <Content>
@@ -65,108 +54,14 @@ const Restaurant: React.FC = () => {
         </SearchInputWrapper>
 
         <ExpandableTabs>
-          <Tab className="almoco" isOpen>
-            <button type="button">
-              Almoço
-              <ArrowIcon />
-            </button>
-            <FoodCards isOpen>
-              <Card>
-                <img
-                  src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/chorizo-mozarella-gnocchi-bake-cropped.jpg"
-                  alt="food"
-                />
-                <FoodInfoWrapper>
-                  <FoodInfo isPromo={false}>
-                    <strong>Nome do Prato</strong>
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do
-                    </span>
-                  </FoodInfo>
-
-                  <Price isPromo>R$ 19,90</Price>
-                </FoodInfoWrapper>
-              </Card>
-
-              <Card>
-                <img
-                  src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/chorizo-mozarella-gnocchi-bake-cropped.jpg"
-                  alt="food"
-                />
-                <FoodInfoWrapper>
-                  <FoodInfo isPromo={false}>
-                    <strong>Nome do Prato</strong>
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do
-                    </span>
-                  </FoodInfo>
-
-                  <Price>R$ 19,90</Price>
-                </FoodInfoWrapper>
-              </Card>
-
-              <Card>
-                <img
-                  src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/chorizo-mozarella-gnocchi-bake-cropped.jpg"
-                  alt="food"
-                />
-                <FoodInfoWrapper>
-                  <FoodInfo isPromo={false}>
-                    <strong>Nome do Prato</strong>
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do
-                    </span>
-                  </FoodInfo>
-
-                  <Price>R$ 19,90</Price>
-                </FoodInfoWrapper>
-              </Card>
-
-              <Card>
-                <img
-                  src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/chorizo-mozarella-gnocchi-bake-cropped.jpg"
-                  alt="food"
-                />
-                <FoodInfoWrapper>
-                  <FoodInfo isPromo className="promotion">
-                    <strong>Nome do Prato</strong>
-                    <span>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do
-                    </span>
-                  </FoodInfo>
-
-                  <Price isPromo>R$ 19,90</Price>
-                </FoodInfoWrapper>
-              </Card>
-            </FoodCards>
-          </Tab>
-
-          <Tab className="bebidas" isOpen>
-            <button type="button">
-              Bebidas
-              <ArrowIcon />
-            </button>
-          </Tab>
-
-          <Tab className="sobremesa" isOpen>
-            <button type="button">
-              Sobremesa
-              <ArrowIcon />
-            </button>
-          </Tab>
-
-          <Tab className="acompanhamentos" isOpen>
-            <button type="button">
-              Acompanhamentos
-              <ArrowIcon />
-            </button>
-          </Tab>
+          <Tab name="Almoço" />
+          <Tab name="Bebidas" />
+          <Tab name="Sobremesas" />
+          <Tab name="Acompanhamentos" />
         </ExpandableTabs>
       </Content>
+
+      <Banner />
     </Container>
   );
 };

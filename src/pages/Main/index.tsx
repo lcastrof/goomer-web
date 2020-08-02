@@ -35,133 +35,133 @@ const Main: React.FC = () => {
       <Cards>
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant" className="closed">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant" className="closed">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant" className="closed">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant" className="closed">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
 
         <RestaurantCard to="/restaurant">
           <img
-            src="https://cdn2.vectorstock.com/i/1000x1000/78/26/restaurant-logo-design-vector-10067826.jpg"
+            src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18094833/the-red-cafe.png"
             alt="restaurant image"
           />
           <RestaurantInfo>
             <strong>Nome do Restaurante</strong>
-            <span>Endereco do restaurante</span>
+            <span>Endereço do restaurante</span>
           </RestaurantInfo>
         </RestaurantCard>
       </Cards>
