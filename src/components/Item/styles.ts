@@ -68,6 +68,8 @@ export const FoodInfo = styled.div<PriceProps>`
     font-size: 12px;
     margin-top: 8px;
     font-weight: 400;
+    max-height: 32px;
+    overflow: hidden;
   }
 `;
 

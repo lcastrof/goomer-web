@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 import Routes from './routes';
@@ -24,7 +24,9 @@ const Container = styled.header`
 const Header: React.FC = () => {
   return (
     <Container>
-      <img src={Logo} alt="logo" />
+      <Link to="/">
+        <img src={Logo} alt="logo" />
+      </Link>
     </Container>
   );
 };
