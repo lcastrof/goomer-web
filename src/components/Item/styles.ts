@@ -14,7 +14,7 @@ export const Card = styled.a`
   margin-bottom: 24px;
 
   img {
-    height: 115px;
+    width: 115px;
     margin-right: 16px;
   }
 
